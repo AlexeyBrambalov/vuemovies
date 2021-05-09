@@ -21,7 +21,7 @@ export default {
 
     onBeforeMount(() => {
       fetch(
-        `http://www.omdbapi.com/?apikey=${process.env.VUE_APP_APIKEY}&i=${route.params.id}&plot=full`
+        `https://www.omdbapi.com/?apikey=${process.env.VUE_APP_APIKEY}&i=${route.params.id}&plot=full`
       )
         .then((res) => res.json())
         .then((data) => {
